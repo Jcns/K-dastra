@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cadastro Prods</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Categoria</th>
+      <th>Produto</th>
+      <th>Preco</th>
+      <th>Info</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cadastro_prods.each do |cadastro_prod| %>
+      <tr>
+        <td><%= cadastro_prod.categoria %></td>
+        <td><%= cadastro_prod.produto %></td>
+        <td><%= cadastro_prod.preco %></td>
+        <td><%= cadastro_prod.info %></td>
+        <td><%= link_to 'Show', cadastro_prod %></td>
+        <td><%= link_to 'Edit', edit_cadastro_prod_path(cadastro_prod) %></td>
+        <td><%= link_to 'Destroy', cadastro_prod, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cadastro Prod', new_cadastro_prod_path %>

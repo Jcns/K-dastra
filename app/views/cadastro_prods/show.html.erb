@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Categoria:</strong>
+  <%= @cadastro_prod.categoria %>
+</p>
+
+<p>
+  <strong>Produto:</strong>
+  <%= @cadastro_prod.produto %>
+</p>
+
+<p>
+  <strong>Preco:</strong>
+  <%= @cadastro_prod.preco %>
+</p>
+
+<p>
+  <strong>Info:</strong>
+  <%= @cadastro_prod.info %>
+</p>
+
+<%= link_to 'Edit', edit_cadastro_prod_path(@cadastro_prod) %> |
+<%= link_to 'Back', cadastro_prods_path %>

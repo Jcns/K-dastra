@@ -1,0 +1,2 @@
+class CadastroProd < ApplicationRecord
+end

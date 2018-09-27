@@ -1,0 +1,2 @@
+module CadastroProdsHelper
+end
