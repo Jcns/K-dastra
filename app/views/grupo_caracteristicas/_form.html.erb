@@ -1,0 +1,27 @@
+<%= form_with(model: grupo_caracteristica, local: true) do |form| %>
+  <% if grupo_caracteristica.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(grupo_caracteristica.errors.count, "error") %> prohibited this grupo_caracteristica from being saved:</h2>
+
+      <ul>
+      <% grupo_caracteristica.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :caracteristicas %>
+    <%= form.text_area :caracteristicas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cadastro_produto_id %>
+    <%= form.text_field :cadastro_produto_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

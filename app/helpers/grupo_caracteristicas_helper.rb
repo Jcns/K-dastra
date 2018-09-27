@@ -1,0 +1,2 @@
+module GrupoCaracteristicasHelper
+end

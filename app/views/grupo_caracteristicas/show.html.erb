@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Caracteristicas:</strong>
+  <%= @grupo_caracteristica.caracteristicas %>
+</p>
+
+<p>
+  <strong>Cadastro produto:</strong>
+  <%= @grupo_caracteristica.cadastro_produto %>
+</p>
+
+<%= link_to 'Edit', edit_grupo_caracteristica_path(@grupo_caracteristica) %> |
+<%= link_to 'Back', grupo_caracteristicas_path %>
