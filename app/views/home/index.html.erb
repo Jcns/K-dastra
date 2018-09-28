@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<title>K-dastra</title>
+
+<body>
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+<!-- Header -->
+  <header class="w3-container w3-blue w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">K-dastra</h1>
+    <button class="w3-btn w3-black w3-padding-large w3-large w3-margin-top">Cadastrar</button>
+  </header>
+
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Sobre a aplicação</h1>
+        <h5 class="w3-padding-32">Aplicação web capaz de cadastrar seus produtos, com suas respectivas imagens, e oferecer um documento (.csv), para download, dos produtos cadastrados de forma organizada.</h5>
+
+        <p class="w3-text-grey">Projeto desenvolvido em Ruby on Rails durante o processo seletivo para vaga de estagiário na empresa Tracking Trade.</p>
+      </div>
+
+      <!-- <div class="w3-third w3-center">
+         <i class="fa fa-anchor w3-padding-64 w3-text-red"></i> 
+      </div> -->
+    </div>
+  </div>
+
+  <div class="w3-container w3-blue w3-center w3-opacity w3-padding-50">
+      <h1 class="w3-margin w3-small">Aceite o que não pode mudar. <br>Mude o que não pode aceitar.<br>- Prof. Galvão</h1>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+    <div class="w3-xlarge w3-padding-32">
+      <a href="https://github.com/Jcns"><i class="fa fa-github w3-hover-opacity"></a></i>
+      <a href="https://www.facebook.com/jeancarlosnsilva"><i class="fa fa-facebook w3-hover-opacity"></a></i> 
+    </div>
+   <p>Powered by <a href="https://github.com/Jcns" target="_blank">Jean Silva</a></p>
+
+  </footer>
+
+  <script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else { 
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+  </script>
+
+</body>
+</html>
