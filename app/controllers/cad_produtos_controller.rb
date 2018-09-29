@@ -1,5 +1,5 @@
 class CadProdutosController < ApplicationController
-  before_action :set_cad_produto, only: [:show, :edit, :update, :destroy]
+  before_action :set_cad_produto, only: [:show, :edit, :update]
 
   # GET /cad_produtos
   # GET /cad_produtos.json
