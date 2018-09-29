@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Categoria:</strong>
+  <%= @cad_produto.categoria %>
+</p>
+
+<p>
+  <strong>Produto:</strong>
+  <%= @cad_produto.produto %>
+</p>
+
+<p>
+  <strong>Caracteristica:</strong>
+  <%= @cad_produto.caracteristica %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @cad_produto.user %>
+</p>
+
+<%= link_to 'Edit', edit_cad_produto_path(@cad_produto) %> |
+<%= link_to 'Back', cad_produtos_path %>
