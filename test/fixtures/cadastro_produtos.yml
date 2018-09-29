@@ -1,9 +1,0 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  categoria_produto: MyString
-  produto: MyString
-
-two:
-  categoria_produto: MyString
-  produto: MyString

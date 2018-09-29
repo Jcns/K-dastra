@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  resources :grupo_caracteristicas
-  resources :cadastro_produtos
   devise_for :users
   get 'home/index'
   post 'home/index'
