@@ -1,2 +1,0 @@
-module CadastroProdutosHelper
-end

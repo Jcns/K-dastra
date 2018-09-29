@@ -1,2 +1,0 @@
-class CadastroProduto < ApplicationRecord
-end
