@@ -5,7 +5,11 @@ class CadProdutosController < ApplicationController
   # GET /cad_produtos
   # GET /cad_produtos.json
   def index
-    @cad_produtos = CadProduto.all
+    @cad_produtos = current_user.cad_produtos.order(:id)
+    respond_to do |format|
+      format.html
+      format.csv { send_data @cad_produtos.to_csv, filename: "Produtos-#{Date.today}.csv"}
+    end
   end
 
   # GET /cad_produtos/1
