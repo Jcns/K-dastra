@@ -2,5 +2,6 @@
 
 <%= render 'form', cad_produto: @cad_produto %>
 
-<%= link_to 'Show', @cad_produto %> |
-<%= link_to 'Back', cad_produtos_path %>
+<%= link_to 'Mostrar', @cad_produto %> |
+<%= link_to 'Voltar', cad_produtos_path %> |
+<%= link_to 'Descartar', @cad_produto, method: :delete, data: {confirm:'Are you sure?'} %>

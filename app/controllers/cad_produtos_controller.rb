@@ -1,5 +1,6 @@
 class CadProdutosController < ApplicationController
-  before_action :set_cad_produto, only: [:show, :edit, :update]
+  before_action :set_cad_produto, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /cad_produtos
   # GET /cad_produtos.json
@@ -25,7 +26,7 @@ class CadProdutosController < ApplicationController
   # POST /cad_produtos.json
   def create
     @cad_produto = CadProduto.new(cad_produto_params)
-
+    @cad_produto.user_id = current_user.id
     respond_to do |format|
       if @cad_produto.save
         format.html { redirect_to @cad_produto, notice: 'Cad produto was successfully created.' }

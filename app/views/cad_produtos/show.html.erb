@@ -17,8 +17,8 @@
 
 <p>
   <strong>User:</strong>
-  <%= @cad_produto.user %>
+  <%= current_user.email %>
 </p>
 
-<%= link_to 'Edit', edit_cad_produto_path(@cad_produto) %> |
-<%= link_to 'Back', cad_produtos_path %>
+<%= link_to 'Editar', edit_cad_produto_path(@cad_produto) %> |
+<%= link_to 'Voltar', cad_produtos_path %>
