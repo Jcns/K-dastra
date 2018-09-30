@@ -1,4 +1,4 @@
-<%= form_with(model: @cad_produto, local: true) do |form| %>
+<%= form_with(model: @cad_produto, html: { multipart: true }, local: true) do |form| %>
   <% if @cad_produto.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@cad_produto.errors.count, "error") %> prohibited this @cad_produto from being saved:</h2>
@@ -24,6 +24,11 @@
   <div class="field">
     <%= form.label :caracteristica %>
     <%= form.text_area :caracteristica %>
+  </div>
+
+  <div class="field">
+    <%= form.label :imagem %>
+    <%= form.file_field :imagem %>
   </div>
 
   <div class="actions">

@@ -20,5 +20,10 @@
   <%= current_user.email %>
 </p>
 
+<p>
+<%= image_tag @cad_produto.imagem.url(:medium) %>
+</p>
+
+
 <%= link_to 'Editar', edit_cad_produto_path(@cad_produto) %> |
 <%= link_to 'Voltar', cad_produtos_path %>
