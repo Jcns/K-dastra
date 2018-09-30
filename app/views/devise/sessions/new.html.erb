@@ -1,25 +1,28 @@
-<h2>Log in</h2>
+<div class="w3-container w3-display-middle w3-center w3-border" style="width:25%">
+  <div class="w3-container w3-blue">
+  <h2>Entrar</h2>
+  </div>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.label :email, class: "w3-text-blue" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "w3-border w3-light-grey" %>
   </div>
 
   <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
+    <%= f.label :password, class: "w3-text-blue" %>
+    <%= f.password_field :password, autocomplete: "current-password", class: "w3-border w3-light-grey" %>
   </div>
 
   <% if devise_mapping.rememberable? -%>
     <div class="field">
-      <%= f.check_box :remember_me %>
+      <%= f.check_box :remember_me, class: "w3-button" %>
       <%= f.label :remember_me %>
     </div>
   <% end -%>
 
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= f.submit "Log in", class: "w3-btn" %>
   </div>
 <% end %>
 

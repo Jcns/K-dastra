@@ -55,7 +55,7 @@
         <td><%= cad_produto.categoria %></td>
         <td><%= cad_produto.produto %></td>
         <td><%= cad_produto.caracteristica %></td>
-        <td align="center"><%= image_tag cad_produto.imagem.url(:thumb) %></td>
+        <td align="center"><%= image_tag cad_produto.imagem.url(:medium) %></td>
         <td><%= link_to 'Expandir', cad_produto %></td>
         <td><%= link_to 'Editar', edit_cad_produto_path(cad_produto) %></td>
       </tr>
