@@ -70,6 +70,6 @@ class CadProdutosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cad_produto_params
-      params.require(:cad_produto).permit(:categoria, :produto, :caracteristica, :user_id)
+      params.require(:cad_produto).permit(:categoria, :produto, :caracteristica, :user_id, :imagem)
     end
 end
