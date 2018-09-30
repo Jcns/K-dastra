@@ -1,5 +1,8 @@
-<%- model_class = CadProduto -%>
-<div class="page-header">
-  <h1><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human.titleize %></h1>
-</div>
+<div class="w3-container w3-display-middle w3-center w3-border" style="width:25%">
+  <div class="w3-container w3-blue">
+  <h2>Novo Produto</h2>
+  </div>
+ 
 <%= render :partial => 'form' %>
+
+<%= link_to 'Voltar', cad_produtos_path %>
