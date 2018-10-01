@@ -23,6 +23,6 @@
 
 
 #### Lições aprendidas
-* Todos os conceitos que envolvem o projeto deve ser estudado e revisado
+* Todos os conceitos que envolvem o projeto devem ser estudados e revisados
 * Linguagens de marcadores (HTML, CSS) e suas respectivas aplicações
 * O framework Ruby on Rails possui métodos de facilitar e aumentar a velocidade do desenvolvimento
