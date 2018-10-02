@@ -24,25 +24,20 @@
     <p class="alert"><%= alert %></p>
     <div class="w3-top">
 
-      <div class="w3-bar w3-blue w3-card w3-left-align w3-medium">
+      <div class="w3-bar w3-blue w3-card w3-right w3-medium">
         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-small w3-hover-white w3-large w3-red" href="
         javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-
-        <div class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-          <%= link_to "Página inicial", root_path %>
-        </div>
-
-        <div class="w3-bar-item w3-button w3-padding-large w3-green w3-right">
-          <% if signed_in? %>
-            Bem-vindo: <%= current_user.email %>
-            <%= link_to "Cadastrar Produtos", new_cad_produto_path %>
-            <%= link_to 'Sair', destroy_user_session_path, method: :delete, data: {confirm:"Deseja mesmo sair?"}%>
-          <% else %>
-            <%= link_to "Login", new_user_session_path %>
-            <%= link_to "Cadastre-se", new_user_registration_path %>
-          <% end %>                 
-        </div>
-
+        <%= link_to "Página inicial", root_path, class: "w3-bar-item w3-button w3-left w3-padding-large w3-hover-white" %>
+        <% if signed_in? %>
+          <%= link_to 'Sair', destroy_user_session_path, method: :delete, data: {confirm:"Deseja mesmo sair?"}, class: "w3-bar-item w3-button w3-padding-large w3-green w3-right"%>
+          <%= link_to "Cadastrar Produtos", new_cad_produto_path, class: "w3-bar-item w3-button w3-padding-large w3-green w3-right"%>
+          <div class="w3-bar-item w3-padding-large w3-green w3-right">
+           Bem-vindo: <%= current_user.email%>
+          </div>
+        <% else %>
+          <%= link_to "Login", new_user_session_path, class: "w3-bar-item w3-button w3-padding-large w3-green w3-right"%>
+          <%= link_to "Cadastre-se", new_user_registration_path, class: "w3-bar-item w3-button w3-padding-large w3-green w3-right" %>
+        <% end %>               
       </div>
 
     </div>
