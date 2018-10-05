@@ -28,6 +28,12 @@ gem 'paperclip'
 # Soft delete
 gem 'paranoia'
 
+gem 'devise_token_auth'
+
+gem 'omniauth'
+
+gem 'rack-cors', :require => 'rack/cors'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
