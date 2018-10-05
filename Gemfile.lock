@@ -86,6 +86,8 @@ GEM
       rails (>= 4.2.0, < 6)
     erubi (1.7.1)
     execjs (2.7.0)
+    faker (1.9.1)
+      i18n (>= 0.7)
     ffi (1.9.25)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -234,6 +236,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise
   devise_token_auth
+  faker
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   omniauth
