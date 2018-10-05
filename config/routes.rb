@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-	namespace :api, defaults: { format: :json } do 
-		resources :userapis
-	end
+  	mount_devise_token_auth_for 'Userapi', at: 'auth'
 	resources :cad_produtos
 	devise_for :users
 	get 'home/index'
