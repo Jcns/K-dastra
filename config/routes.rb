@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount_devise_token_auth_for 'Userapi', at: 'auth'
 	namespace :api, defaults: { format: :json } do 
 		resources :userapis
 	end
