@@ -2,6 +2,13 @@
 
 K-dastra, Uma Aplicação Web em Ruby on Rails para realização de cadastros de produtos. Projeto realizado para seleção de estágio na Tracking Trade.
 
+    
+### Instalação e execução
+    
+    bundle install
+    rake db:setup
+    rails s
+    
 ### Gem's Utilizadas
 
     Autenticação de usuários
@@ -12,5 +19,5 @@ K-dastra, Uma Aplicação Web em Ruby on Rails para realização de cadastros de
     
     "Soft Delete"
     gem "paranoia"
-
+    
 > O projeto foi finalizado com sucesso.
